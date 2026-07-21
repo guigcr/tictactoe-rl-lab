@@ -1,6 +1,6 @@
 # Reinforcement Learning for Tic-Tac-Toe: From Minimax to DQN
 
-> 🚧 **Work in progress** — this project is still under active development. Expect incomplete features, rough edges, and frequent changes.
+> **Work in progress** — this project is still under active development. Expect incomplete features, rough edges, and frequent changes.
 
 ## Overview
 
@@ -31,10 +31,4 @@ This is a difficulty-rated learning project (Hard) built as a multi-step lab. Co
 
 Tic-Tac-Toe is small enough to solve exactly, which makes it an ideal sandbox for understanding how RL agents learn, where they succeed, and where they fall short compared to exact methods like minimax. This project is meant as an educational deep dive into RL fundamentals rather than a production-ready library.
 
-## License
 
-TBD
-
-## Acknowledgments
-
-Project structure inspired by [Deep-ML](https://www.deep-ml.com/projects).
