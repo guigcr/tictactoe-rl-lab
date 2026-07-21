@@ -12,10 +12,7 @@ Board representation:
 
 import numpy as np
 
-
-# ---------------------------------------------------------------------------
 # Board setup
-# ---------------------------------------------------------------------------
 
 def create_empty_board():
     """Return an empty 3x3 Tic-Tac-Toe board as an int numpy array of zeros."""
@@ -32,9 +29,7 @@ def encode_player(player):
         return 0
 
 
-# ---------------------------------------------------------------------------
 # Display
-# ---------------------------------------------------------------------------
 
 def print_board(board):
     """Print the 3x3 board using X, O, and . characters."""
@@ -49,10 +44,7 @@ def print_board(board):
                 linha.append(".")
         print(" ".join(linha))
 
-
-# ---------------------------------------------------------------------------
 # Cell / move utilities
-# ---------------------------------------------------------------------------
 
 def is_cell_empty(board, row, col):
     """Return True if board[row, col] is empty (0), else False."""
@@ -82,10 +74,7 @@ def get_legal_moves(board):
                 lista.append((i, j))
     return lista
 
-
-# ---------------------------------------------------------------------------
 # Win / draw checks
-# ---------------------------------------------------------------------------
 
 def check_row_win(board, player):
     """Return True if `player` has three-in-a-row across any row of `board`."""
@@ -154,10 +143,7 @@ def get_game_status(board):
     else:
         return "ongoing"
 
-
-# ---------------------------------------------------------------------------
 # Turn management
-# ---------------------------------------------------------------------------
 
 def get_current_player(board):
     """Infer whose turn it is by comparing the count of X's and O's on the board."""
@@ -185,9 +171,7 @@ def switch_player(player):
         return 1
 
 
-# ---------------------------------------------------------------------------
-# Game loops
-# ---------------------------------------------------------------------------
+#Game Loops
 
 def play_hardcoded_game(moves):
     """Play a predetermined sequence of (row, col) moves and return the final board and status."""
